@@ -4,6 +4,14 @@ CentOS 7 container with Mono and HyperFast CGI 4
 
 Will allow you to run docker container with ServiceStack webservices.
 
+Docker image is here: https://hub.docker.com/r/openmedicus/centos-servicestack/
+
+### Pull and run
+
+> docker pull openmedicus/centos-servicestack
+
+Now you can run it
+
 > docker run -d -v /www/ws1:/var/www:ro -p 8080:80 centos-servicestack
 
 This will use your ServiceStack webservice in '/www/ws1'.
@@ -48,4 +56,8 @@ MAINTAINER Your Name <your_name@your_domain.com>
 
 ADD your_ws_folder /var/www/
 ```
+
+### Please comment on:
+
+https://github.com/openmedicus/centos-servicestack
 
