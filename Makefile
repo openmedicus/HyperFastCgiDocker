@@ -1,5 +1,8 @@
 all: build tag push
 
+pull:
+	sudo docker pull centos:7
+
 build:
 	sudo docker build -t centos-servicestack .
 
