@@ -1,14 +1,14 @@
-all: build tag push
+all: pull build tag push
 
 pull:
 	sudo docker pull centos:7
 
 build:
-	sudo docker build -t centos-servicestack .
+	sudo docker build -t hyperfastcgi .
 
 tag:
-	sudo docker tag centos-servicestack openmedicus/centos-servicestack:latest
+	sudo docker tag hyperfastcgi openmedicus/hyperfastcgi:latest
 
 push:
-	sudo docker push openmedicus/centos-servicestack
+	sudo docker push openmedicus/hyperfastcgi
 
